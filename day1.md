@@ -1,10 +1,15 @@
 # 1. Gün Egzersizleri
 ----------------------
 1."Yorumlar kodu okunabilir hale getirmeye yardımcı olur" yazan tek satırlı bir yorum yazın.
-` 
+
+```js
 // Yorumlar kodu okunabilir hale getirmeye yardımcı olur.
-`
-2."30GundeJavaScript eğitimine hoş geldiniz" yazan başka bir yorum satırı oluşturun
+```
+
+2."30GundeJavaScript eğitimine hoş geldiniz" yazan başka bir yorum satırı oluşturun.
+```js
+// 30 GundeJavaScript eğitimine hoş geldiniz
+```
 
 3."Yorumlar kodu okunabilir, yeniden kullanımı kolay ve bilgilendirici bir hale getirir." yazılı, birden çok satıra yayılmış çok satırlı bir yorum yazın
 
