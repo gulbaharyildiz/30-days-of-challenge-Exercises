@@ -39,17 +39,19 @@
 
 // E6
 
-   let name
-    let lastname
-    let age
-    let job
+    let name_
+    let lastname_
+    let age_
+    let job_
 
-    name= "bahar"
-    lastname = "yıldız"
-    age = 25
-    job = "computer engineer"
+// E7    
 
-// E7
+    name_ = "bahar"
+    lastname_ = "yıldız"
+    age_ = 25
+    job_ = "computer engineer" 
+
+// E8
     let ad = "Bahar"
     let soyad = "Yıldız"
     let medeniDürümü = "bekar"
@@ -58,11 +60,18 @@
     
     console.log(ad ,soyad,medeniDürümü,ülke,yas)
 
-// E8
+// E9
 
-    let ad = "Bahar",
-        soyad = "Yıldız"
-        medeniDürümü = "bekar"
-        ülke = "Türkiye"
-        yas = 25
+    let ad_ = "Bahar" ,
+        soyad_ = "Yıldız" ,
+        medeniDürümü_ = "bekar" ,
+        ülke_ = "Türkiye" ,
+        yas_ = 25
         
+// E10
+ 
+    let myAge = 25
+    let youAge = 30
+
+    console.log(`I am ${myAge} years old.`)
+    console.log(`You are ${youAge} years old.`)
