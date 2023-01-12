@@ -253,13 +253,39 @@ let cümle2 = 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir ba
 ![egzersiz2](./img/day2.2.png)
 ### Egzersiz: Seviye 3
 
-1. 'Aşk bu dünyadaki en iyi şeydir. Bazıları aşkını buldu ve bazıları hala aşkını arıyor.' Bu cümledeki __love__ kelimesini sayın.
+1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Bu cümledeki __love__ kelimesini sayın.
+````js
+ let cümle3 = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+ let pattern = /love/gi
+ console.log(cümle3.match(pattern))
+
+````
+
 2. Aşağıdaki cümledeki tüm __çünkü__ sayısını saymak için __match()__ kullanın:__'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'__
+````js
+ let cümle4= 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'
+ let str = /çünkü/gi
+console.log(cümle4.match(str))
+````
+
 3. Aşağıdaki metni temizleyin ve en sık kullanılan kelimeyi bulun (ipucu, değiştirme ve normal ifadeleri kullanın).
 
     ```js
         const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
     ```
+````js
+const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+let del= ""
+let del1 = /[$%&@#]/gi
+console.log(sentence.replace(del1,del))
+````
 
 4. Aşağıdaki metinden sayıları çıkararak kişinin yıllık toplam gelirini hesaplayın. 
 'Aylık maaşından 5000 euro, yıllık 10000 euro ikramiye, ayda 15000 euro online kurstan kazanıyor.'
+````js
+let cümle5 = 'Aylık maaşından 5000 euro, yıllık 10000 euro ikramiye, ayda 15000 euro online kurstan kazanıyor.'
+let say = cümle5.match(/\d+/gi) //regEx -> \d sayıları , + birden fazla basamagı , g global aramayı sağlar.
+let hesapla = parseInt(say[0])+parseInt(say[1])+parseInt(say[2]) //dizideki string degerleri int değerine çevirip topladım.
+console.log(hesapla)
+````
+![egzersiz2.3](./img/day2.3.png)

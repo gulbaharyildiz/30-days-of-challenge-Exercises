@@ -144,5 +144,24 @@ let cümle2 = 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir ba
 
 // ----------Egzersiz 3 ---------------------
 
+//E3.1
+ let cümle3 = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+ let pattern = /love/gi
+ console.log(cümle3.match(pattern))
 
+ //E3.2
+ let cümle4= 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'
+ let str = /çünkü/gi
+console.log(cümle4.match(str))
 
+//E3.3
+const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+let del= ""
+let del1 = /[$%&@#]/gi
+console.log(sentence.replace(del1,del))
+
+//E3.4
+let cümle5 = 'Aylık maaşından 5000 euro, yıllık 10000 euro ikramiye, ayda 15000 euro online kurstan kazanıyor.'
+let say = cümle5.match(/\d+/gi) //regEx -> \d sayıları , + birden fazla basamagı , g global aramayı sağlar.
+let hesapla = parseInt(say[0])+parseInt(say[1])+parseInt(say[2]) //dizideki string degerleri int değerine çevirip topladım.
+console.log(hesapla)
