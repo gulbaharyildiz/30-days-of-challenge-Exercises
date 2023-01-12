@@ -6,7 +6,7 @@
 1. Challenge adında bir değişken tanımlayın ve  **'30 Days Of JavaScript'** başlangıç ​​değerine atayın.
 
 ````js
-let challenge = "30 Days Of JavaScript"
+let challenge = "30 Days Of JavaScript" // değişken tanımlayıp değer atama
 
 ````
 2. __console.log()__ kullanarak tarayıcı konsolunda değişkeni yazdırın,
@@ -97,6 +97,7 @@ console.log(challenge.indexOf("a")) // baştan ilk a degerinin indexi buluyor.
 16. 30 Days of JavaScript'te __a__ öğesinin son oluşumunun konumunu belirlemek için __lastIndexOf__ kullanın.
 
 ````js
+console.log(challenge.lastIndexOf("a"))// son a harfinin indexsini buluyor.
 
 ````
 17. Aşağıdaki cümlede __çünkü__ kelimesinin ilk geçtiği yeri bulmak için __indexOf__ kullanın:
@@ -171,21 +172,66 @@ console.log(challenge.repeat(2))
     ```sh
     The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
     ```
+    ````js
+    console.log(`The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+    `)
+    ````
 
 2. console.log()'u kullanarak Rahibe Teresa'nın aşağıdaki alıntısını yazdırın:
 
     ```sh
     "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
     ```
-
+    ````js
+    console.log(`"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+    `)
+    ````
 3. '10' tipinin tam olarak 10'a eşit olup olmadığını kontrol edin. Değilse tam olarak eşit yapın.
+    ````js
+    let a =10
+    let b= "10"
+    console.log(a==b) //true
+    ````
 4. parseFloat('9.8') 10'a tam olarak eşit değilse, 10'a eşit olup olmadığını kontrol edin.
+    ````js
+    let f = parseFloat(9.8)
+    let i = 10
+    console.log(f==i) //false
+    console.log(Math.ceil(f)==i) // true 
+    ````
 5. Hem python hem de jargonda 'on' ifadesinin bulunup bulunmadığını kontrol edin
+````js
+let py = "python"
+let jr = "jargon"
+console.log(py.includes("on")) // treu
+console.log(jr.includes("on")) // true
+````
 6. _Umarım bu kurs jargonla dolu değildir_. Cümlede _jargon_ olup olmadığını kontrol edin.
+````js
+let cümle1 ="Umarım bu kurs jargonla dolu değildir"
+console.log(cümle1.includes("jargon"))
+````
 7. 0 ile 100 arasında rastgele bir sayı üretin.
+````js
+console.log(Math.random()*101)
+
+````
 8. 50 ile 100 arasında rastgele bir sayı üretin.
+````js
+console.log(Math.random()*(101-50)+50)
+
+````
 9. Dahil olmak üzere 0 ile 255 arasında rastgele bir sayı oluşturun.
+````js
+console.log(Math.random()*256)
+
+````
 10. Rastgele bir sayı kullanarak 'JavaScript' dize karakterlerine erişin.
+````js
+let js = "javascript"
+console.log(js.length)
+console.log(js.charAt(Math.random()*11))
+````
 11. Aşağıdaki kalıbı yazdırmak için console.log() ve kaçış karakterlerini kullanın.
 
     ```js
@@ -195,9 +241,16 @@ console.log(challenge.repeat(2))
     4 1 4 16 64
     5 1 5 25 125
     ```
+````js
+console.log("1 1 1 1 1 \n2 1 2 4 8 \n3 1 3 9 27 \n4 1 4 16 64 \n5 1 5 25 125")
 
+````
 12. __substr__ kullanarak __çünkü çünkü__ ifadesini aşağıdaki cümleden ayırın:__'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'__
-
+````js
+let cümle2 = 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'
+ console.log(cümle2.substring(cümle2.indexOf("çünkü çünkü")))
+````
+![egzersiz2](./img/day2.2.png)
 ### Egzersiz: Seviye 3
 
 1. 'Aşk bu dünyadaki en iyi şeydir. Bazıları aşkını buldu ve bazıları hala aşkını arıyor.' Bu cümledeki __love__ kelimesini sayın.

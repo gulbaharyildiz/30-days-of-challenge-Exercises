@@ -1,5 +1,8 @@
 // Multiple External Scripts kullanacagımız zaman script ile html dosyamıza eklememiz gerekiyor.
 
+// ----------Egzersiz 1 ---------------------
+
+
 // E1.1
 let challenge = "30 Days Of JavaScript" // değişken tanımlayıp değer atama
 
@@ -85,7 +88,61 @@ console.log(str1.concat(str2))
 console.log(challenge.repeat(2))
 
 
+// ----------Egzersiz 2 ---------------------
 
+// E2.1
+console.log(`The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+`)
+
+// E2.2
+console.log(`"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+`)
+
+// E2.3
+let a =10
+let b= "10"
+console.log(a==b) //true
+
+// E2.4
+let f = parseFloat(9.8)
+let i = 10
+console.log(f==i) //false
+console.log(Math.ceil(f)==i) // true
+
+// E2.5`
+let py = "python"
+let jr = "jargon"
+console.log(py.includes("on")) // treu
+console.log(jr.includes("on")) // true
+
+// E2.6 
+let cümle1 ="Umarım bu kurs jargonla dolu değildir"
+console.log(cümle1.includes("jargon"))
+
+// E2.7
+console.log(Math.random()*101)
+
+// E2.8
+console.log(Math.random()*(101-50)+50)
+
+// E2.9
+console.log(Math.random()*256)
+
+// E2.10
+let js = "javascript"
+console.log(js.length)
+console.log(js.charAt(Math.random()*11))
+
+// E2.11
+console.log("1 1 1 1 1 \n2 1 2 4 8 \n3 1 3 9 27 \n4 1 4 16 64 \n5 1 5 25 125")
+    
+// E2.12
+let cümle2 = 'Bir cümleyi çünkü ile bitiremezsiniz çünkü çünkü bir bağlaçtır'
+ console.log(cümle2.substring(cümle2.indexOf("çünkü çünkü")))
+
+
+
+// ----------Egzersiz 3 ---------------------
 
 
 
