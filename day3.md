@@ -5,11 +5,52 @@
 ### Egzersiz: Seviye 1
 
 1. firstName, lastName, country, city, age, isMarried, year değişkenlerini oluşturun ve bunlara değer atayın. Farklı veri türlerini kontrol etmek için typeof operatörünü kullanın.
+````js
+let firstName = "Bahar",
+    lastName = "Yıldız"
+    country = "Türkiye",
+    city = "Yozgat",
+    age = 25,
+    isMarried = false,
+    year = 2023
+
+console.log(typeof(firstName),
+            typeof(lastName),
+            typeof( country),
+            typeof( city),
+            typeof(age),
+            typeof(isMarried),
+            typeof( year)
+            ) 
+````
 2. '10' türünün 10'a eşit olup olmadığını kontrol edin
+````js
+let num = 10
+let str ="10"
+console.log(str==num)
+````
 3. parseInt('9.8') 10'a eşit olup olmadığını kontrol edin
+````js
+//console.log(parseInt("9.8")==10)
+let sayi = "9.8"
+let say= 10
+
+console.log(parseInt(sayi)==say)
+````
 4. Boolean değeri, doğru veya yanlıştır.
    1. Doğruluk değeri sağlayan üç JavaScript ifadesi yazın.
+   ````js
+    console.log(5==5)
+    console.log(true==1)
+    console.log(false==0)
+    
+   ````
    2. Yanlış değer sağlayan üç JavaScript ifadesi yazın.
+   ````js
+   console.log(4==5)
+    console.log("ad"=="isim")
+    console.log(4=="dört")
+   ````
 
 5. console.log() kullanmadan önce aşağıdaki karşılaştırma ifadesinin sonucunu bulun. Sonuca karar verdikten sonra console.log() kullanarak onaylayın.
    1. 4 > 3
@@ -23,7 +64,24 @@
    9. 4 != '4'
    10. 4 == '4'
    11. 4 === '4'
-   12. Python ve jargonun uzunluğunu bulun ve yanlış bir karşılaştırma ifadesi yapın.
+   12. Python ve jargon un uzunluğunu bulun ve yanlış bir karşılaştırma ifadesi yapın.
+````js
+console.log(4 > 3) //true
+console.log(4 >= 3) //true
+console.log(4 < 3) //false
+console.log(4 <= 3) //false
+console.log(4 == 4) //true
+console.log(4 === 4) //true
+console.log(4 != 4) //false
+console.log(4 !== 4) //false
+console.log(4 != '4') //false
+console.log(4 == '4') //true
+console.log(4 === '4') //false
+let py = "python"
+let jr = "jargon"
+console.log(py.length !== jr.length)
+    
+````
 
 6. console.log() kullanmadan önce aşağıdaki ifadelerin sonucunu bulun. Sonuca karar verdikten sonra console.log() kullanarak onaylayın.
    1. 4 > 3 && 10 < 12
@@ -37,15 +95,57 @@
    9. !(4 > 3 && 10 > 12)
    10. !(4 === '4')
    11. Hem dragon hem de python'da 'on' yoktur.
+````js
+console.log(
+4 > 3 && 10 < 12,//true
+4 > 3 && 10 > 12, //false
+4 > 3 || 10 < 12, //true
+4 > 3 || 10 > 12, //true
+!(4 > 3), // false
+!(4 < 3), //true
+!(false), //true
+!(4 > 3 && 10 < 12), //false
+!(4 > 3 && 10 > 12), //true
+!(4 === '4') //true
+            )
+ let dr = "dragon"   
+ let pyt ="python "
+ console.log(dr.includes("on")!==pyt.includes("on"))
+```
 
 7. Aşağıdaki etkinlikleri yapmak için Date nesnesini kullanın.
    1. Bugün yıl nedir?
+
+   ````js
+   let now = new Date()
+    console.log(now.getFullYear())
+   ````
    2. Bugünün ayı rakam olarak nedir?
+   ````js
+    console.log(now.getMonth()) 
+
+   ````
    3. Bugünün tarihi nedir?
+   ````js
+   console.log(now)
+   ````
    4. Bugün sayı olarak gün nedir?
+   ````js
+  console.log(now.getDay())
+
+   ````
    5. Şimdi saat kaç?
+   ````js
+   console.log(`Saat =${now.getHours()}.${now.getMinutes()}.${now.getSeconds()}`)
+   ````
    6. Dakika kaç şimdi?
+   ````js
+   console.log(now.getMinutes())
+   ````
    7. 1 Ocak 1970'den bugüne kadar geçen saniye sayısını bulun.
+   ````js
+   console.log(now.getTime())
+   ````
 
 ### Egzersiz: Seviye 2
 
