@@ -131,9 +131,10 @@ console.log(
    ````
    4. Bugün sayı olarak gün nedir?
    ````js
-  console.log(now.getDay())
-
+   console.log(now.getDay())
+   
    ````
+
    5. Şimdi saat kaç?
    ````js
    console.log(`Saat =${now.getHours()}.${now.getMinutes()}.${now.getSeconds()}`)
