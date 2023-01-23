@@ -111,7 +111,7 @@ console.log(
  let dr = "dragon"   
  let pyt ="python "
  console.log(dr.includes("on")!==pyt.includes("on"))
-```
+````
 
 7. Aşağıdaki etkinlikleri yapmak için Date nesnesini kullanın.
    1. Bugün yıl nedir?
@@ -157,7 +157,7 @@ console.log(
    The area of the triangle is 100
    ```
 
-1. Kullanıcıdan üçgenin a kenarını, b kenarını ve c kenarını girmesini ve üçgenin çevresini hesaplamasını isteyen bir komut dosyası yazın (çevre = a + b + c)
+2. Kullanıcıdan üçgenin a kenarını, b kenarını ve c kenarını girmesini ve üçgenin çevresini hesaplamasını isteyen bir komut dosyası yazın (çevre = a + b + c)
 
    ```sh
    Enter side a: 5
@@ -166,13 +166,13 @@ console.log(
    The perimeter of the triangle is 12
    ```
 
-1. Komut istemini kullanarak uzunluk ve genişliği alın ve bir dikdörtgenin alanını hesaplayın (alan = uzunluk x genişlik ve dikdörtgenin çevresi (çevre = 2 x (uzunluk + genişlik))
-1. Komut istemini kullanarak yarıçapı alın ve bir dairenin alanını (alan = pi x r x r) ve bir dairenin çevresini (c = 2 x pi x r) hesaplayın, burada pi = 3.14.
-1. y = 2x -2'nin eğimini, x kesme noktasını ve y kesme noktasını hesaplayın
-1. Eğim m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). (2, 2) noktası ile (6,10) noktası arasındaki eğimi bulun
-1. Yukarıdaki iki sorunun eğimini karşılaştırın.
-1. y'nin değerini hesaplayın (y = x<sup>2</sup> + 6x + 9). Farklı x değerleri kullanmayı deneyin ve y'nin hangi x değerinin 0 olduğunu bulun.
-1. Kullanıcıdan saat ve saat başına oran girmesini isteyen bir komut dosyası yazın. Kişinin ücretini hesapla?
+3. Komut istemini kullanarak uzunluk ve genişliği alın ve bir dikdörtgenin alanını hesaplayın (alan = uzunluk x genişlik ve dikdörtgenin çevresi (çevre = 2 x (uzunluk + genişlik))
+4. Komut istemini kullanarak yarıçapı alın ve bir dairenin alanını (alan = pi x r x r) ve bir dairenin çevresini (c = 2 x pi x r) hesaplayın, burada pi = 3.14.
+5. y = 2x -2'nin eğimini, x kesme noktasını ve y kesme noktasını hesaplayın
+6. Eğim m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). (2, 2) noktası ile (6,10) noktası arasındaki eğimi bulun
+7. Yukarıdaki iki sorunun eğimini karşılaştırın.
+8. y'nin değerini hesaplayın (y = x<sup>2</sup> + 6x + 9). Farklı x değerleri kullanmayı deneyin ve y'nin hangi x değerinin 0 olduğunu bulun.
+9. Kullanıcıdan saat ve saat başına oran girmesini isteyen bir komut dosyası yazın. Kişinin ücretini hesapla?
 
     ```sh
     Enter hours: 40
@@ -180,8 +180,8 @@ console.log(
     Your weekly earning is 1120
     ```
 
-1. Adınızın uzunluğu 7'den büyükse, adınız uzun, yoksa adınızın kısa olduğunu söyleyin.
-1. Adınızın uzunluğunu ve soyadınızın uzunluğunu karşılaştırın ve bu çıktıyı almalısınız.
+10. Adınızın uzunluğu 7'den büyükse, adınız uzun, yoksa adınızın kısa olduğunu söyleyin.
+11. Adınızın uzunluğunu ve soyadınızın uzunluğunu karşılaştırın ve bu çıktıyı almalısınız.
 
     ```js
     let firstName = 'Asabeneh'
@@ -192,7 +192,7 @@ console.log(
     Your first name, Asabeneh is longer than your family name, Yetayeh
     ```
 
-1. İki değişken _myAge_ ve _yourAge_ bildirin ve bunlara başlangıç değerleri ile myAge ve yourAge atayın.
+12. İki değişken _myAge_ ve _yourAge_ bildirin ve bunlara başlangıç değerleri ile myAge ve yourAge atayın.
 
    ```js
    let myAge = 250
@@ -203,7 +203,7 @@ console.log(
    I am 225 years older than you.
    ```
 
-1. İstemi kullanarak, kullanıcının doğduğu yılı alır ve kullanıcı 18 veya daha büyükse, kullanıcıya belirli bir süre beklemesini söylemediği takdirde, kullanıcının araba kullanmasına izin verir.
+13. İstemi kullanarak, kullanıcının doğduğu yılı alır ve kullanıcı 18 veya daha büyükse, kullanıcıya belirli bir süre beklemesini söylemediği takdirde, kullanıcının araba kullanmasına izin verir.
     ```sh
 
     Enter birth year: 1995
@@ -213,14 +213,14 @@ console.log(
     You are 15. You will be allowed to drive after 3 years.
     ```
 
-1. Kullanıcıdan yıl sayısını girmesini isteyen bir komut dosyası yazın. Bir kişinin yaşayabileceği saniye sayısını hesaplayın. Birinin sadece yüz yıl yaşadığını varsayalım
+14. Kullanıcıdan yıl sayısını girmesini isteyen bir komut dosyası yazın. Bir kişinin yaşayabileceği saniye sayısını hesaplayın. Birinin sadece yüz yıl yaşadığını varsayalım
 
    ```sh
    Enter number of years you live: 100
    You lived 3153600000 seconds.
    ```
 
-1. Tarih saat nesnesini kullanarak insan tarafından okunabilir bir saat biçimi oluşturun
+15. Tarih saat nesnesini kullanarak insan tarafından okunabilir bir saat biçimi oluşturun
    1. YYYY-MM-DD HH:mm
    2. DD-MM-YYYY HH:mm
    3. DD/MM/YYYY HH:mm
