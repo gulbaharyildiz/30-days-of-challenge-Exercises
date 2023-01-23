@@ -134,7 +134,6 @@ console.log(
    console.log(now.getDay())
    
    ````
-
    5. Şimdi saat kaç?
    ````js
    console.log(`Saat =${now.getHours()}.${now.getMinutes()}.${now.getSeconds()}`)
